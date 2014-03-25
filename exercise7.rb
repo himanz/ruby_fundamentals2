@@ -24,3 +24,7 @@ puts "\n"
 students.delete(:cohort2)
 display(students)
 puts "\n"
+
+total_students = 0
+students.each {|cohort, size| total_students += size}
+puts "Total amount of students in all cohorts is #{total_students}."
