@@ -31,3 +31,6 @@ grocery_list.sort!
 
 list_items(grocery_list)
 puts "\n"
+
+grocery_list.delete("salmon")
+list_items(grocery_list)
