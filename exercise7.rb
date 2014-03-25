@@ -8,3 +8,6 @@ students.each {|cohort, size| puts "#{cohort}: #{size} students"}
 puts "\n"
 
 students[:cohort4] = 43
+
+puts students.keys()
+puts "\n"
