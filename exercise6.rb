@@ -13,3 +13,5 @@ end
 
 list_items(grocery_list)
 puts "\n"
+
+puts "Items in grocery list to pick up is #{grocery_list.count}"
