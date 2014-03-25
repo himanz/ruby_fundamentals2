@@ -19,3 +19,8 @@ puts "\n"
 students.map {|cohort, size| students[cohort] = (size * 1.05).to_i}
 
 display(students)
+puts "\n"
+
+students.delete(:cohort2)
+display(students)
+puts "\n"
