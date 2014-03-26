@@ -15,6 +15,10 @@
 #
 def triangle(a, b, c)
   # WRITE THIS CODE
+  raise TriangleError, "impossible triangle" if [a,b,c].min <= 0
+  x, y, z = [a,b,c].sort
+  raise TriangleError, "no two sides can be < than the third" if x + y <= z
+  
   if a == b && a == c
   	return :equilateral
   elsif a == b || a == c || b == c
